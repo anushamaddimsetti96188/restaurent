@@ -1,0 +1,140 @@
+
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: #8b0000;
+    padding: 20px 0 40px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #8b0000;
+    border-radius: 5px;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Heading */
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8b0000;
+    margin-bottom: 25px;
+}
+
+/* ===== Contact Details ===== */
+.contact-details {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Labels */
+.contact-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs & Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #8b0000;
+    box-shadow: 0 0 6px rgba(139, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #a50000;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    #contact {
+        width: 95%;
+        padding: 25px;
+    }
+
+    #contact h2 {
+        font-size: 26px;
+    }
+}

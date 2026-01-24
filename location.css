@@ -1,0 +1,91 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #8b0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    font-size: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #8b0000;
+    border-radius: 5px;
+}
+
+/* Location Section */
+#location {
+    width: 80%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#location h2 {
+    color: #8b0000;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Location Details */
+.location-details {
+    margin-bottom: 20px;
+}
+
+.location-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Map Container */
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #location {
+        width: 95%;
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
